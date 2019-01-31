@@ -3,7 +3,11 @@ language: clojure
 lein: 1.10.0
   
 build:
-      
+  pre_ci_boot:
+    image_name: drydock/u16cloall
+    image_tag: v6.12.0
+    pull: true
+    
   ci:
     - lein version
     - echo "(print *clojure-version*)" > clojure.main  

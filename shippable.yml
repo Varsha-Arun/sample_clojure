@@ -1,7 +1,6 @@
 language: clojure
 
-lein:
-  - 1.10.0
+lein: 1.10.0
 
 runtime:
   nodePool: dynamic__x86_64__CentOS_7__c4_large

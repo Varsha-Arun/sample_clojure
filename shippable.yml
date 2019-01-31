@@ -1,14 +1,14 @@
 language: clojure
 
-runtime:
-  nodePool: dynamic__x86_64__Ubuntu_14_04__c4_large
-
 lein:
   1.10.0
+
+runtime:
+  nodePool: dynamic__x86_64__CentOS_7__c4_large
   
 build:
   pre_ci_boot:
-    image_name: drydock/u14cloall
+    image_name: drydock/c7cloall
     image_tag: master
     pull: true
     

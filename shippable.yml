@@ -1,10 +1,17 @@
 language: clojure
 
+runtime:
+  nodePool: dynamic__x86_64__Ubuntu_14_04__c4_large
+
 lein:
   1.10.0
   
 build:
-      
+  pre_ci_boot:
+    image_name: drydock/u14cloall
+    image_tag: master
+    pull: true
+    
   ci:
     - lein version
     - echo "(print *clojure-version*)" > clojure.main  

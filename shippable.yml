@@ -3,10 +3,10 @@ language: clojure
 lein: 1.10.0
   
 build:
-  pre_ci_boot:
-    image_name: drydock/u16cloall
-    image_tag: v6.12.4
-    pull: true
+  #pre_ci_boot:
+  #  image_name: drydock/u16cloall
+  #  image_tag: v6.12.4
+  #  pull: true
     
   ci:
     - lein version
